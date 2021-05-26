@@ -380,7 +380,7 @@ html {
 
 .calendar__list--content-text, .calendar__upcom--disc {
     color: var(--color-disc);
-    width: 300px;
+    width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-line-clamp: 2;
@@ -442,7 +442,7 @@ html {
 }
 
 .calendar__upcom--disc {
-    width: 350px;
+    width: 100%;
     -webkit-line-clamp: 4;
     margin-top: 10px;
 }

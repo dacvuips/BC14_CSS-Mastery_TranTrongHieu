@@ -222,6 +222,7 @@ html {
     border-radius: 5px;
     text-align: center;
     padding: 40px;
+    cursor: pointer;
 }
 
 .app__icon i {

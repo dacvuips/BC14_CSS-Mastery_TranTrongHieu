@@ -76,7 +76,7 @@ html {
 .header__nav--logo {
     margin: 10px 0;
     height: 45px;
-    display: inline-flex;
+    display: block;
 }
 
 .header__nav--icon {
@@ -87,6 +87,7 @@ html {
     text-align: center;
     display: inline-block;
     margin-right: 12px;
+    float: left;
 }
 
 .header__nav--icon i {
@@ -99,6 +100,7 @@ html {
     color: var(--color-text);
     font-size: 35px;
     font-weight: 600;
+    float: left;
 }
 
 .header__nav--container {
@@ -232,21 +234,35 @@ html {
     margin: 0 185px;
 }
 
+.data__col {
+    float: left;
+    width: 25%;
+}
+
+.data__item .data__item--number {
+    width: 30%;
+    margin-right: 10px;
+}
+
+.data__item .data__item--text {
+    width: 70%;
+    display: inline-block;
+    padding-right: 42px;
+    font-size: 20px;
+}
+
 .data__item {
     margin: 40px 0;
-    display: flex;
-    align-items: center;
 }
 
 .data__item--number {
     color: var(--color-text);
     font-size: 50px;
     font-weight: 600;
+    width: 30%;
 }
 
-.data__item--text {
-    padding: 0 60px 0 15px;
-}
+.data__item--text {}
 
 .feel {
     position: relative;
@@ -350,10 +366,11 @@ html {
 .calendar__list {
     background-color: var(--color-white);
     padding: 20px 20px 0px 20px;
+    margin-bottom: 20px;
 }
 
 .calendar__list--item {
-    display: flex;
+    float: left;
     margin-bottom: 20px;
 }
 
@@ -363,8 +380,8 @@ html {
 
 .calendar__list--content {
     padding: 0px 20px 20px 20px;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+    width: 65%;
 }
 
 .calendar__list--content-title {
@@ -396,19 +413,17 @@ html {
 .calendar__upcom--item {
     background-color: var(--color-white);
     margin-bottom: 20px;
-    display: flex;
 }
 
 .calendar__upcom--calendar {
     margin: 20px;
+    display: inline-block;
+    float: left;
 }
 
 .calendar__upcom--up {
     border-radius: 5px 5px 0 0;
     background-color: var(--color-yellow);
-    display: flex;
-    flex-direction: column;
-    align-items: center
 }
 
 .calendar__upcom--up-number {
@@ -418,8 +433,10 @@ html {
 }
 
 .calendar__upcom--up-text {
+    display: block;
     font-size: 20px;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 .calendar__upcom--down {
@@ -432,6 +449,8 @@ html {
 
 .calendar__upcom--text {
     padding: 20px 20px 20px 0;
+    display: inline-block;
+    width: 70%;
 }
 
 .calendar__upcom--title {
@@ -448,20 +467,25 @@ html {
 }
 
 .calendar__upcom--time {
-    display: flex;
     margin-top: 10px;
     color: var(--color-blue);
 }
 
 .calendar__upcom--time--number {
+    display: inline-block;
     color: var(--color-blue);
 }
 
 .calendar__upcom--time--line {
+    display: inline-block;
     width: 1px;
     background-color: var(--color-disc);
     margin: 0 15px;
     height: 20px;
+}
+
+.calendar__upcom--time--local {
+    display: inline-block;
 }
 
 .footer {
@@ -511,7 +535,6 @@ html {
 
 .footer__coppyright {
     margin: 40px 200px;
-    display: flex;
     justify-content: space-between;
 }
 
@@ -529,4 +552,9 @@ html {
     color: var(--color-white);
     text-decoration: none;
     margin-left: 20px;
+}
+
+.footer__coppyright--ter {
+    display: inline-block;
+    float: right;
 }

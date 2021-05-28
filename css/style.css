@@ -128,7 +128,15 @@ html {
     background-image: url(../img/2.jpg);
     height: 600px;
     background-size: cover;
-    filter: brightness(50%);
+}
+
+.course__bgc {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
 }
 
 .intro {
